@@ -1,18 +1,3 @@
-PatchBay 0.1
-============
-
-PatchBay is a python class used to connect multiple (1-many) in-streams with multiple (0-many) out-streams.
-
-Examples
---------
-
-Run two programs and log stdout and stderr from both program in the same file.
-stderr from program1 is also sent to sys.stdout and
-stderr from program2 is also sent to sys.stderr
-The data from the four individual in-streams are also returned in a dictionary
-where the in-streams are the keys.
-
-```python
 #!/usr/bin/python
 
 import sys
@@ -31,9 +16,3 @@ with open('merged.log', 'w') as log:
     for fh, data in stream_data.iteritems():
         print "fd={} -------------------------------------------------".format(fh.fileno())
         print "data={}".format(data)
-```
-
-License
--------
-This is free and unencumbered software released into the public domain.
-See [LICENSE.md].
