@@ -36,4 +36,4 @@ with open('merged.log', 'w') as log:
 License
 -------
 This is free and unencumbered software released into the public domain.
-See [LICENSE.md].
+See [https://github.com/TedLyngmo/patchbay/blob/master/LICENSE.md].
